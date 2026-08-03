@@ -1,0 +1,17 @@
+ipykernel
+numpy
+Pillow
+scipy
+scikit-image
+opencv_python
+opencv_contrib_python
+opencv_python_headless
+imageio
+ipython
+matplotlib
+pillow_lut
+blend_modes
+imgviz
+gradio
+Wand
+requests
