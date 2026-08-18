@@ -1,0 +1,28 @@
+DIP HOMEWORK 1 - PROMPT ENGINEERING LOG:
+
+Prompt 1 [Image Arithmetic & Saturation Analysis - Q2]:
+"Convert the Q2 Python script into a clean, well-documented Jupyter Notebook (Q2.ipynb). Implement and compare NumPy modular (wrap-around modulo 256) arithmetic versus OpenCV saturation arithmetic (cv2.add, cv2.subtract) on 8-bit grayscale image patches. Include image blending using cv2.addWeighted, ensure all output figures are rendered inline via Matplotlib rather than saved locally, structure section headings using markdown (##), and format the analytical discussion in a markdown cell explaining overflow/underflow behavior in image processing."
+
+
+Prompt 2 [Uniform Quantization & MSQE Evaluation - Q4]:
+"Convert Q4.py into Q4.ipynb. Implement vectorized uniform quantization for arbitrary gray levels L in [2, 256] using the quantization formula q(r) = floor(r / Delta) * Delta + Delta/2 with Delta = 256/L. Generate a visual comparison grid across varying levels of L, plot Mean Squared Quantization Error (MSQE) against L, and add a comprehensive markdown discussion analyzing the steep 1/L^2 error decay and connecting the empirical curve to false contouring / posterization artifacts."
+
+
+Prompt 3 [Gaussian Kernel from Scratch & Multi-Scale 3D Analysis - Q5]:
+"Structure Q5 into a modular Jupyter Notebook (Q5.ipynb). Implement a 2D Gaussian kernel generator from scratch using NumPy coordinate grids, verify it against OpenCV's separable 1D outer product (cv2.getGaussianKernel), apply both kernels to a test grayscale image via cv2.filter2D and cv2.GaussianBlur, compute the reconstruction MSE, and generate 3D surface mesh plots illustrating Gaussian spatial profiles across multiple sigma values (sigma = 0.5, 1.0, 2.0, 5.0)."
+
+
+Prompt 4 [Mathematical Formulation & Markdown Header Standardization]:
+"Enhance each Jupyter notebook (Q1 through Q5) by inserting formal LaTeX mathematical equations immediately below the main title. Include key theoretical models such as ITU-R BT.601 grayscale conversion weights, Nyquist-Shannon sampling limits, Gaussian kernel formulas, MSE/PSNR definitions, and uniform quantization step size equations to ensure complete mathematical and academic rigor."
+
+
+Prompt 5 [Color Space Conversion & Multi-Format Compression Benchmarking - Q1]:
+"Convert Q1.py into Q1.ipynb. Read a test color image, extract metadata (dimensions, channels, dtype), convert it to grayscale using ITU-R BT.601 luminance weighting (0.299*R + 0.587*G + 0.114*B), and display side-by-side comparisons. Encode the grayscale image in-memory into JPEG (quality=50), PNG, and BMP formats, display a comparative file size table, and explain why lossy vs. lossless vs. uncompressed encodings yield differing byte footprints."
+
+
+Prompt 6 [Spatial Down-Sampling, Aliasing & Anti-Aliasing Evaluation - Q3]:
+"Convert Q3.py into Q3.ipynb to evaluate spatial down-sampling and anti-aliasing. Implement unfiltered direct sub-sampling (pixel skipping) alongside Gaussian low-pass pre-filtered down-sampling for factors 2, 4, and 8. Reconstruct images to original dimensions using nearest-neighbor interpolation, quantitatively measure degradation via MSE and PSNR (dB), and provide theoretical discussion on Nyquist frequency limits and suppression of Moiré/aliasing artifacts."
+
+
+Prompt 7 [Report Compilation & Document Assembly - Final PDF]:
+"Generate the final unified submission report (WRITTEN_QUESTION_REPORTS2.pdf). The report must include the complete solutions to the 5 theoretical written questions, followed by comprehensive coding reports for all five practical tasks (Q1 to Q5). For each coding question, embed the formatted source code, mathematical formulas, high-resolution output figures/visualizations exported from the notebooks, and theoretical discussions."
