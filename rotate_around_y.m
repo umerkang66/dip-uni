@@ -1,4 +1,4 @@
-function rotate_around_y_centered()
+function rotate_around_y()
     clc;
     close all;
     % Read image
